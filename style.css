@@ -1,5 +1,6 @@
 body {
     background-color: #A94438;
+    overflow-x: hidden;
 }
 
 .board {
@@ -13,7 +14,7 @@ body {
 
 h1 {
     position: relative;
-    left: 770px;
+    left: 570px;
     top: 100px;
 }
 
@@ -25,16 +26,16 @@ h1 {
     font-size: 24px;
     cursor: pointer;
     position: relative;
-    left: 700px;
-    top: 150px;
+    left: 500px;
+    top: 100px;
     background-color: #E6BAA3;
     border-radius: 10px;
 }
 
 .option button {
     position: relative;
-    left: 750px;
-    top: 200px;
+    left: 550px;
+    top: 150px;
     height: 100px;
     width: 100px;
     border-radius: 10px;
@@ -52,4 +53,12 @@ button:hover {
 button {
     background-color: brown;
     border: none;
+    position: relative;
+    left: 20px;
+    top: -350px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: #E4DEBE 1px solid;
+    border-radius: 10px;
 }
