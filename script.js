@@ -20,7 +20,7 @@ const cellClicked = (row, col) => {
     const p = document.querySelector(`.place-${row}-${col}`);
     p.textContent = String(currentPlayer);
     if(!checkWin() && !board.flat().includes('')){
-        
+        console.log("draw")
     }
     currentPlayer = currentPlayer == "X"? "O" : "X";
 };
