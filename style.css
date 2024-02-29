@@ -1,3 +1,7 @@
+body {
+    background-color: #A94438;
+}
+
 .board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -14,7 +18,7 @@ h1 {
 }
 
 .cell {
-    border: 1px solid black;
+    border: 1px solid #E4DEBE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +27,8 @@ h1 {
     position: relative;
     left: 700px;
     top: 150px;
+    background-color: #E6BAA3;
+    border-radius: 10px;
 }
 
 .option button {
@@ -31,6 +37,8 @@ h1 {
     top: 200px;
     height: 100px;
     width: 100px;
+    border-radius: 10px;
+    border: #E4DEBE 1px solid;
 }
 
 button:hover {

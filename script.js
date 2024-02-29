@@ -22,8 +22,10 @@ const cellClicked = (row, col) => {
 
     if (checkWin()) {
         console.log("Player " + currentPlayer + " wins!");
+        playerWin(currentPlayer);
     } else if (draw()) {
         console.log("Draw!");
+        matchDraw()
     } else {
         currentPlayer = currentPlayer == "X" ? "O" : "X";
     }
@@ -68,4 +70,14 @@ const resetGame = () => {
     })
     document.querySelector(".option").classList.remove('hide');
     document.querySelector(".board").classList.add('hide');
+}
+
+const playerWin = (turn) => {
+    alert(`Player ${turn} wins!`);
+    resetGame();
+}
+
+const matchDraw = () => {
+    alert(`Match Draw`);
+    resetGame();
 }
